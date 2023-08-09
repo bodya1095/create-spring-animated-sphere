@@ -1,13 +1,15 @@
 {
     "name": "create-spring-sphere-animation",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "sphere animation with toggles",
     "author": "bodya1095@gmail.com",
     "repository": {
         "type": "git",
         "url": "https://github.com/bodya1095/create-spring-animated-sphere"
     },
-    "bin":  "./bin/cli.js",
+    "bin":  {
+        "cli": "./bin/cli.js"
+    },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=development ts-node -P \"./tsconfig.webpack.json\" \"./scripts/webpack/start\"",
         "build": "cross-env-shell NODE_ENV=production ts-node -P \"./tsconfig.webpack.json\" \"./scripts/webpack/build\"",
