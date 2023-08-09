@@ -1,11 +1,14 @@
 {
-    "name": "spring-sphere-animation",
-    "version": "5.2.0",
+    "name": "h2-spring-sphere-animation",
+    "version": "0.2.0",
     "description": "sphere animation with toggles",
     "author": "bodya1095@gmail.com",
     "repository": {
         "type": "git",
         "url": "https://github.com/bodya1095/spring-animated-sphere"
+    },
+    "bin": {
+        "create-custom-script": "/bin/create-custom-script.js"
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=development ts-node -P \"./tsconfig.webpack.json\" \"./scripts/webpack/start\"",
